@@ -10,7 +10,7 @@ const Nav = () => {
 		</h1>
 		<ul>
 			<li>
-				<Link className="link" to="/about">1. About Us </Link> 
+				<Link className="link" to="/">1. About Us </Link> 
 			</li>
 			<li>
 				<Link className="link" to="/work">2. Our Work </Link> 
