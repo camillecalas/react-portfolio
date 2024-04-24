@@ -5,10 +5,18 @@ import { LayoutGroup } from 'framer-motion'
 
 import styled from 'styled-components'
 import { BasicLayout } from '../styles'
+import useScroll from './useScroll'
+import { scrollReveal } from '../animation'
 
 const FaqSection = () => {
+	const[element, controls] = useScroll()
   return (
-	<Faq>
+	<Faq
+		variants={scrollReveal}
+		ref={element}
+		animate={controls}
+		initial={'hidden'}
+	>
 		<h2>Any questions ?  <span>FAQ</span></h2>
 		<LayoutGroup>
 			<Toggle title="How do I start ?">
