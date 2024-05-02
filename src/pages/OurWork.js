@@ -7,6 +7,8 @@ import styled from 'styled-components'
 //ANIMATION
 import {motion} from 'framer-motion'
 import { pageAnimation, fade, photoAnim, lineAnim, slider, sliderContainer } from '../animation'
+import useScroll from '../components/useScroll';
+
 
 //DATA
 import athlete from "../img/athlete-small.png";
@@ -14,6 +16,10 @@ import theracer from "../img/theracer-small.png";
 import goodtimes from "../img/goodtimes-small.png"
 
 const OurWork = () => {
+
+	const [element, controls] = useScroll();
+	const [element2, controls2] = useScroll();
+
   return (
 	<Work style={{ background: "#fff" }} 
 		variants={pageAnimation} 
@@ -37,24 +43,20 @@ const OurWork = () => {
 				</Link>
 		</Movie>
 
-		<Movie>
-			<motion.h2 variants={fade}>The racer</motion.h2>
+		<Movie ref={element} variants={fade} animate={controls} initial="hidden">
+			<h2>The racer</h2>
 			<motion.div variants={lineAnim} className="line"></motion.div>
 			<Link to="/work/the-racer">
-					<Hide>
-						<motion.img variants={photoAnim} src={theracer} alt="racer" />
-					</Hide>
-				</Link>
+				<img src={theracer} alt="racer" />
+			</Link>
 		</Movie>
 
-		<Movie>
-			<motion.h2 variants={fade}>Good Time</motion.h2>
+		<Movie ref={element2} variants={fade} animate={controls2} initial="hidden">
+			<h2>Good Time</h2>
 			<motion.div variants={lineAnim} className="line"></motion.div>
-				<Link to="/work/good-times">
-					<Hide>
-						<motion.img variants={photoAnim} src={goodtimes} alt="good time" />
-					</Hide>
-				</Link>
+			<Link to="/work/good-times">
+				<img src={goodtimes} alt="good time" />
+			</Link>
 		</Movie>
 	</Work>
   )
@@ -70,7 +72,7 @@ const Work = styled(motion.div)`
 	}
 `;
 
-const Movie = styled.div`
+const Movie = styled(motion.div)`
 	padding-bottom: 10rem;
 
 	.line {
