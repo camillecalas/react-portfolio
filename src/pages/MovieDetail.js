@@ -7,6 +7,7 @@ import { pageAnimation } from '../animation'
 
 //STYLES
 import styled from 'styled-components';
+import ScrollTop from '../components/ScrollTop';
 
 //DATA
 import {MovieState} from '../movieState'
@@ -64,6 +65,7 @@ const MovieDetail = () => {
 						</ImageDisplay>
 			</Details>
 			)}
+			<ScrollTop/>
 	  </>
 	)
 }

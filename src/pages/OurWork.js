@@ -8,7 +8,7 @@ import styled from 'styled-components'
 import {motion} from 'framer-motion'
 import { pageAnimation, fade, photoAnim, lineAnim, slider, sliderContainer } from '../animation'
 import useScroll from '../components/useScroll';
-
+import ScrollTop from '../components/ScrollTop';
 
 //DATA
 import athlete from "../img/athlete-small.png";
@@ -58,6 +58,7 @@ const OurWork = () => {
 				<img src={goodtimes} alt="good time" />
 			</Link>
 		</Movie>
+		<ScrollTop/>
 	</Work>
   )
 }
