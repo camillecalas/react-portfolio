@@ -91,6 +91,12 @@ const Headline = styled.div`
 		height: 70vh;
 		object-fit: cover;
 	}
+
+	@media (max-width: 445){
+		h2{
+			font-size: 5vh;
+		}
+	}
 `
 
 const StyledAwards = styled.div`
