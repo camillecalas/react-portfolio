@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- [Live Site URL](https://main--cc-music-app.netlify.app/)
+- [Live Site URL](https://cc-react-capture-portfolio.netlify.app/)
 
 
 ## My process
