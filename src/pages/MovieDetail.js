@@ -28,7 +28,7 @@ const Award = ({title, description}) => {
 const MovieDetail = () => {
 
 	const url = useLocation(); // Use useLocation hook
-	const [movies, setMovies] = useState(MovieState);
+	const [movies] = useState(MovieState);
 	const [movie, setMovie] = useState({});
   
 	//UseEffect

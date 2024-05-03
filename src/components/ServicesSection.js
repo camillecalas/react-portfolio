@@ -1,7 +1,4 @@
 import React from 'react'
-import {useInView} from 'react-intersection-observer'
-
-import { useAnimation } from 'framer-motion'
 
 //DATA
 import clock from '../img/clock.svg'
