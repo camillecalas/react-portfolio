@@ -37,7 +37,7 @@ Users should be able to:
 
 - [React](https://reactjs.org/) - JS library
 - [Styled componenets](https://styled-components.com/) - For styles
-- [Framer] (https://www.framer.com/motion/) - For animations
+- [Framer](https://www.framer.com/motion/) - For animations
 
 ## Linkedin
 - [https://www.linkedin.com/in/camillecalas](https://www.linkedin.com/in/camillecalas/)
